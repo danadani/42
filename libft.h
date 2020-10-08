@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: haelee <haelee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/07 10:17:52 by haelee            #+#    #+#             */
-/*   Updated: 2020/10/08 21:40:10 by haelee           ###   ########.fr       */
+/*   Created: 2020/10/07 12:20:50 by haelee            #+#    #+#             */
+/*   Updated: 2020/10/08 22:06:56 by haelee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
 
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
+# define LIBFT_H
+# include <stdlib.h>
+# include <unistd.h>
 
-	if (!str)
-		return (0);
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
+size_t	ft_strlen(const char *str);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+char *ft_strchr(const char *s, int c);
+#endif
