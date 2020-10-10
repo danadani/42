@@ -27,7 +27,8 @@ int main()
   	while (pch != NULL) 
 	{
     	printf("found at %ld\n", pch - str + 1);
-   		pch = strchr(pch + 1, 's');
+		printf("pch : %s\n", pch);
+   		pch = strchr(pch + 1, 's');	
   	}
 	printf("---------------------\n");
 	char str2[] = "This is a sample string";
