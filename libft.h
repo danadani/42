@@ -6,7 +6,7 @@
 /*   By: haelee <haelee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 12:20:50 by haelee            #+#    #+#             */
-/*   Updated: 2020/10/10 20:47:25 by haelee           ###   ########.fr       */
+/*   Updated: 2020/10/14 22:37:47 by haelee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+void *ft_memset(void *dest, int c, size_t len);
+void ft_bzero(void *s, size_t n);
+void *ft_memcpy(void *dst, const void *src, size_t n);
+void *ft_memccpy(void *dst, const void *src, int c, size_t n);
+void *ft_memmove(void *dst, const void *src, size_t len);
+void *ft_memchr(const void *s, int c, size_t n);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
@@ -28,4 +34,6 @@ int ft_isdigit(int c);
 int ft_isalnum(int c);
 int ft_isascii(int c);
 int ft_isprint(int c);
+int ft_toupper(int c);
+int ft_tolower(int c);
 #endif
