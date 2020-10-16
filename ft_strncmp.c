@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
 int ft_strncmp(const char * s1, const char *s2, size_t n)
 {
@@ -26,18 +24,4 @@ int ft_strncmp(const char * s1, const char *s2, size_t n)
 		i++;
 	}
 	return (0);
-}
-
-int main()
-{
-	char a[] = "aaadaaa";
-	char b[] = "aaabaaa";
-
-	printf("lib: %d\n", strncmp(a, b, 7));
-
-	char c[] = "aaadaaa";
-	char d[] = "aaabaaa";
-
-	printf("my: %d\n", ft_strncmp(c, d, 7));
-	return 0;
 }

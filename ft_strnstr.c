@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -34,20 +32,5 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 		}
 		i++;
 	}
-	return (0);
-}
-
-int main()
-{
-	char a[] = "hello hi hippo";
-	char b[] = "hi";
-
-	printf("my: %s\n", ft_strnstr(a, b, 14));
-	printf("---------------\n");
-
-	char c[] = "hello hi hippo";
-	char d[] = "hi";
-
-	printf("lib: %s\n", strnstr(c, d, 14));
 	return (0);
 }

@@ -1,7 +1,4 @@
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
-
 
 int ft_atoi(const char *str)
 {
@@ -30,16 +27,4 @@ int ft_atoi(const char *str)
 		i++;
 	}
 	return (sign * num);
-}
-
-int main()
-{
-	char a[] = "    –2147483647";
-
-	printf("my: %d\n", atoi(a));
-
-	char b[] = "    –2147483647";
-
-	printf("lib: %d\n", ft_atoi(b));
-	return (0);
 }

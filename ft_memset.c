@@ -1,6 +1,4 @@
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 void *ft_memset(void *dest, int c, size_t len)
 {
@@ -15,15 +13,4 @@ void *ft_memset(void *dest, int c, size_t len)
 		len--;
 	}
 	return(ptr);
-}
-
-int main() 
-{
-  char str[] = "almost every programmer should know memset!";
-  char str2[] = "almost every programmer should know memset!";
-  memset(str, '-', 6);
-  ft_memset(str2, '*', 6);
-  puts(str);
-  printf("%s\n", str2);
-  return 0;
 }

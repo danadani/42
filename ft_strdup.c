@@ -1,5 +1,5 @@
 #include "libft.h"
-#include <stdio.h>
+
 char *ft_strdup(const char *s)
 {
     char *str;
@@ -18,13 +18,4 @@ char *ft_strdup(const char *s)
     }
     str[i] = '\0';
     return (str);
-}
-
-int main()
-{
-    char src[6]="HEllo";
-    char *str= ft_strdup(src);
-    printf("%s\n",str);
-    free(str);
-    return 0;
 }
