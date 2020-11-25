@@ -6,10 +6,9 @@ void	ft_putstr_fd(char *s, int fd)
 
 	if (!s)
 		return ;
-	i = 0;
-	while (s[i])
+	while (*s)
 	{
-		write(fd, &s[i], 1);
-		i++;
+		ft_putchar_fd(*s, fd);
+		s++;
 	}
 }
