@@ -22,24 +22,24 @@ char			*ft_itoa(int n)
 	size_t		numlen;
 	size_t		sign;
 	char		*result;
-	long long	n1;
+	long long	num;
 
 	numlen = get_num_len(n);
 	if (!(result = (char *)malloc(sizeof(char) * (numlen + 1))))
 		return (NULL);
 	result[numlen] = '\0';
 	sign = 0;
-	n1 = (long long)n;
-	if (n1 < 0)
+	num = (long long)n;
+	if (num < 0)
 	{
-		n1 *= -1;
+		num *= -1;
 		result[0] = '-';
 		sign = 1;
 	}
 	while (numlen-- > sign)
 	{
-		result[numlen] = (n1 % 10) + '0';
-		n1 /= 10;
+		result[numlen] = (num % 10) + '0';
+		num /= 10;
 	}
 	return (result);
 }
